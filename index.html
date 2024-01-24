@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <link rel="stylesheet"  type="text/css" href="styles.css"/>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+      <div class="card">
+        <form id="form">
+            <label for="search">Search by location:</label>
+            <input
+                type="text"
+                id="search"
+                placeholder="Enter city name"
+                autocomplete="off"
+                aria-label="Search by location"
+            />
+            <div id="loading" style="display: none;">Loading...</div>
+        </form>
+        <button id="unitToggle" class="units">Toggle Temparture Units (F to C)</button>
+        <main id="main"></main>
+        </div>
+    </body>
+</html>
